@@ -7,17 +7,19 @@ html,body{
     width:100%;
     height:100%
 }
-body{
+#main{
+    height: 100%;
+    width: 100%;
+    padding-top: 1px;
     position: relative;
 }
 #navbar{
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 12vh;
-    margin-top: 1%;
+    height: 14vh;
+    margin-top: 2%;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
 }
@@ -36,6 +38,7 @@ body{
     margin-right: 0.4vw; 
 }
 #navbar p i {
+    top: 0.75%;
     font-size: 1vw;
 }
 #navbar h4{
@@ -46,7 +49,10 @@ body{
     padding-right: 3vw;
     height: 100%;
     border-right: 2px solid black;
-    font-family: "monument", sans-serif;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.2vw;
+    /* line-height: 3vw; */
 }
 #navbar h4:nth-last-child(1)
 {
@@ -57,4 +63,22 @@ body{
 #navbar h4:nth-last-child(2)
 {
     width: 30%;
+}
+section{
+    width: 100%;
+    height: 81.90%;
+    padding: 1.5vw;
+    position: relative;
+}
+#video-container{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transform: scale(0.9);
 }
