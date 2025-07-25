@@ -1,0 +1,60 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%
+}
+body{
+    position: relative;
+}
+#navbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 12vh;
+    margin-top: 1%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#navbar p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+}
+#navbar p span {
+    font-family: "monument", sans-serif;
+    font-weight: 900;
+    font-size: 2.25vw;
+    letter-spacing: -0.33vw;
+    margin-right: 0.4vw; 
+}
+#navbar p i {
+    font-size: 1vw;
+}
+#navbar h4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding-right: 3vw;
+    height: 100%;
+    border-right: 2px solid black;
+    font-family: "monument", sans-serif;
+}
+#navbar h4:nth-last-child(1)
+{
+    width: 15%;
+    font-size: 1.5vw;
+    font-weight: 200;
+}
+#navbar h4:nth-last-child(2)
+{
+    width: 30%;
+}
