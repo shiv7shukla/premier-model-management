@@ -69,11 +69,13 @@ section{
     height: 81.90%;
     padding: 1.5vw;
     position: relative;
+    overflow: hidden;
 }
 #video-container{
     height: 100%;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 #video-container video{
     height: 100%;
@@ -81,4 +83,44 @@ section{
     object-fit: cover;
     object-position: top;
     transform: scale(0.9);
+}
+#overlay{
+    position: absolute;
+    width:93.99%;
+    height: 50%;
+    bottom: 0;
+    padding: 2.5vw 0 0 5.75vw;
+    font-family: monument,'sans-serif';
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#over1 h1{
+    height: 100%;
+    width: 100%;
+    mix-blend-mode:overlay;
+    font-size: 3.5vw;
+    font-weight: 100;
+    color: aliceblue;
+}
+#over1 h2{
+    padding-right: 0.5vw;
+    font-size: 2.5vw;
+    font-weight: 100;
+    mix-blend-mode:overlay;
+    color: aliceblue;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: aliceblue;
+    mix-blend-mode: overlay;
+    font-size: 2.25vw;
+    border-top: 2px solid aliceblue;
+}
+#over2 h4{
+    padding-right: 0.75vw;
 }
