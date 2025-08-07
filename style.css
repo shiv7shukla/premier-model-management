@@ -66,8 +66,8 @@ html,body{
 }
 section{
     width: 100%;
-    height: 81.90%;
-    padding: 1.5vw;
+    height: 100%;
+    padding: 5vw 5vw 2.5vw 5vw;
     position: relative;
     overflow: hidden;
 }
@@ -75,21 +75,19 @@ section{
     height: 100%;
     width: 100%;
     position: relative;
-    overflow: hidden;
 }
 #video-container video{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    object-fit:cover;
     object-position: top;
-    transform: scale(0.9);
 }
 #overlay{
     position: absolute;
-    width:93.99%;
+    width: 100%;
     height: 50%;
     bottom: 0;
-    padding: 2.5vw 0 0 5.75vw;
+    padding: 6vw 2.5vw;
     font-family: monument,'sans-serif';
 }
 #over1{
@@ -98,18 +96,8 @@ section{
     justify-content: space-between;
 }
 #over1 h1{
-    height: 100%;
-    width: 100%;
-    mix-blend-mode:overlay;
     font-size: 3.5vw;
     font-weight: 100;
-    color: aliceblue;
-}
-#over1 h2{
-    padding-right: 0.5vw;
-    font-size: 2.5vw;
-    font-weight: 100;
-    mix-blend-mode:overlay;
     color: aliceblue;
 }
 #over2{
@@ -117,10 +105,98 @@ section{
     align-items: center;
     justify-content: space-between;
     color: aliceblue;
-    mix-blend-mode: overlay;
     font-size: 2.25vw;
     border-top: 2px solid aliceblue;
 }
 #over2 h4{
     padding-right: 0.75vw;
+}
+#circle{
+    border-radius: 50%;
+    width: 6vw;
+    height: 5.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: 2px solid white;
+    color: aliceblue;
+    text-align: center;
+    font-size: 2.5vw;
+}
+#circle p{
+    font-weight: 100;
+    font-family: monument,'sans-serif';
+}
+#scroll{
+    height: 30vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#container-one{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#container-two{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+#scroll img{
+    height: 80%;
+    width: 12%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 1vw;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+#alphabet {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+#alphabet h5{
+    padding: 1vw;
+    text-decoration: underline;
+    font-size: 2vw;
+    font-weight: 400;
+    font-style: italic;
+}
+#alphabet h6{
+    padding: 0.25vw 0.35vw;
+    font-size: .95vw;
+    font-weight: 300;
+    font-style: italic;
+    border: 1px solid white;
+    border-radius: 65%;
+    transition: all ease-in-out 0.2s;
+}
+#alphabet h6:hover{
+    border: 1px solid black;
+    transform: scale(150%);
+    cursor: pointer;
 }
